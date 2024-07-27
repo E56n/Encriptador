@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar favicon -->
+    <!-- Se debe especificar el tipo de imagen correctamente. Si es PNG, debe ser type="image/png" -->
+    <link rel="icon" href="lockedicon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <!-- Cambiar a enlace <a> para redirigir -->
+            <!-- El uso de target="_blank" abre el enlace en una nueva pestaña; se recomienda agregar rel="noopener noreferrer" por seguridad -->
+            <a href="https://www.aluracursos.com/" target="_blank" class="logo" rel="noopener noreferrer">alura</a>
+            <!-- Área de texto para ingresar el texto que se desea encriptar o desencriptar -->
+            <textarea id="input-text" placeholder="Ingrese el texto aquí..."></textarea>
+            <footer>
+                <!-- Información del desarrollador y enlace a LinkedIn -->
+                <p>Desarrollado por Eder Said Martinez Ramirez, 2024</p>
+                <!-- Asegúrate de que el enlace a LinkedIn sea accesible y correcto -->
+                <a href="https://www.linkedin.com/in/edersaidmartinezr/" target="_blank" rel="noopener noreferrer">Contáctame por LinkedIn</a>
+            </footer>
+        </div>
+        <div class="right-panel">
+            <!-- Imagen de ilustración que complementa la interfaz -->
+            <img src="illustration.png" alt="Illustration" id="illustration">
+            <div id="messages">
+                <!-- Imagen y mensaje relacionados con el estado de encriptación/desencriptación -->
+                <img id="lock-image" alt="Lock Image" style="display: none;">
+                <p id="processed-message"></p>
+            </div>
+            <p id="instruction">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </div>
+    <!-- Contenedor para los botones de acción -->
+    <div class="buttons">
+        <!-- Botones para encriptar, desencriptar y copiar texto -->
+        <button id="encrypt-button">Encriptar</button>
+        <button id="decrypt-button">Desencriptar</button>
+        <!-- Botón de copiar oculto inicialmente -->
+        <button id="copy-button" style="display: none;">Copiar</button>
+    </div>
+    <!-- Notificación que aparece cuando el texto se copia al portapapeles -->
+    <div id="notification" class="notification">
+        Texto copiado al portapapeles
+    </div>
+    <!-- Archivo JavaScript que contiene la lógica de la aplicación -->
+    <script src="script.js"></script>
+</body>
+</html>

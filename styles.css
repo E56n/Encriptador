@@ -1,0 +1,170 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Fuente de texto principal */
+    background-color: #f5f7fa; /* Color de fondo de la página */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    height: 80vh; /* Altura del contenedor ajustada a un 80% de la altura de la ventana */
+    background: #fff; /* Fondo blanco del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior del contenedor */
+}
+
+/* Left Panel Styles */
+.left-panel {
+    flex: 1; /* Toma el mismo espacio que el panel derecho */
+    padding: 20px; /* Espacio interno del panel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    background-color: #e7eaf6; /* Color de fondo del panel izquierdo */
+    border-radius: 8px 0 0 8px; /* Bordes redondeados solo en las esquinas izquierdas */
+}
+
+.logo {
+    font-size: 48px; /* Tamaño del texto del logo */
+    color: #1e3a8a; /* Color del texto del logo */
+    margin-bottom: 20px; /* Espacio inferior del logo */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.logo:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor sobre el logo */
+}
+
+textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 500px; /* Ancho máximo del área de texto */
+    height: 150px; /* Altura del área de texto */
+    margin: 20px 0; /* Espacio superior e inferior del área de texto */
+    padding: 15px; /* Espacio interno del área de texto */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente dentro del área de texto */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+footer {
+    font-size: 12px; /* Tamaño de la fuente en el pie de página */
+    color: #666; /* Color del texto del pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+}
+
+footer a {
+    color: #1e3a8a; /* Color del enlace en el pie de página */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+}
+
+/* Right Panel Styles */
+.right-panel {
+    flex: 1; /* Toma el mismo espacio que el panel izquierdo */
+    padding: 20px; /* Espacio interno del panel */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    background-color: #fff; /* Color de fondo del panel derecho */
+    border-radius: 0 8px 8px 0; /* Bordes redondeados solo en las esquinas derechas */
+}
+
+#illustration {
+    width: 100%; /* Ocupa todo el ancho del panel derecho */
+    max-width: 300px; /* Ancho máximo de la imagen de ilustración */
+    margin-bottom: 20px; /* Espacio inferior de la imagen */
+}
+
+#messages {
+    display: block; /* Asegura que el contenedor de mensajes sea un bloque */
+    width: 100%; /* Ocupa todo el ancho del panel derecho */
+    text-align: center; /* Centra el texto en el contenedor de mensajes */
+}
+
+#lock-image {
+    display: block; /* Muestra la imagen de bloqueo */
+    margin: 0 auto 10px auto; /* Centra horizontalmente la imagen y agrega espacio inferior */
+    max-width: 75px; /* Ancho máximo de la imagen de bloqueo (reducido en un 25% desde 100px) */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#processed-message {
+    font-size: 18px; /* Tamaño del texto del mensaje procesado */
+    color: #333; /* Color del texto del mensaje procesado */
+    margin: 0; /* Sin espacio alrededor del mensaje */
+    word-wrap: break-word; /* Permite que las palabras largas se rompan */
+    max-width: 300px; /* Ancho máximo del mensaje procesado */
+}
+
+#instruction {
+    font-size: 16px; /* Tamaño del texto de instrucción */
+    color: #555; /* Color del texto de instrucción */
+    text-align: center; /* Centra el texto de instrucción */
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    padding: 20px; /* Espacio interno alrededor de los botones */
+}
+
+button {
+    padding: 10px 20px; /* Espacio interno dentro del botón */
+    font-size: 16px; /* Tamaño de la fuente dentro del botón */
+    color: #fff; /* Color del texto del botón */
+    background-color: #1e3a8a; /* Color de fondo del botón */
+    border: none; /* Elimina el borde por defecto del botón */
+    border-radius: 8px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+button:hover {
+    background-color: #163971; /* Color de fondo del botón al pasar el cursor */
+}
+
+#copy-button {
+    background-color: #4CAF50; /* Color de fondo del botón de copiar */
+}
+
+#copy-button:hover {
+    background-color: #45A049; /* Color de fondo del botón de copiar al pasar el cursor */
+}
+
+/* Notification Styles */
+.notification {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posiciona la notificación en una ubicación fija en la pantalla */
+    bottom: 20px; /* Espacio desde el borde inferior */
+    right: 20px; /* Espacio desde el borde derecho */
+    padding: 15px; /* Espacio interno alrededor del texto de la notificación */
+    background-color: #4CAF50; /* Color de fondo de la notificación (verde de éxito) */
+    color: #fff; /* Color del texto de la notificación */
+    border-radius: 8px; /* Bordes redondeados de la notificación */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    font-size: 16px; /* Tamaño del texto en la notificación */
+    z-index: 1000; /* Asegura que la notificación esté encima de otros elementos */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave para la visibilidad de la notificación */
+}
+
+.notification.show {
+    display: block; /* Muestra la notificación */
+    opacity: 1; /* Hace que la notificación sea visible */
+}
