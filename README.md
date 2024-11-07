@@ -1,11 +1,5 @@
 # Text Encryption Challenge
 
-## Introduction
-
-This is a way to implement Challenge Based Learning, which means learning through challenges, a method created with Apple's help. The Text Encryption Challenge is key to success as a developer. Through practice and the refinement of logic, you will strengthen your knowledge, master logical thinking, improve problem analysis and resolution, and expand your perspective on the development world.
-
-## Training
-
 This project is part of the **Beginner in Programming G7 - ONE** training. It is designed as an introductory guide for those who want to enter the programming universe and start creating web pages using the popular languages **HTML**, **CSS**, and **JavaScript**.
 
 ## Description
